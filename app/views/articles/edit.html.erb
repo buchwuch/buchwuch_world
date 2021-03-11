@@ -1,0 +1,8 @@
+<% if @articles.empty? %>
+<h2>This article cannot be found.</h2>
+<% else %>
+<h1>Title: <%= article.title %></h1>
+<p>Content: <%= article.content %></p>
+<p>Category: <%= article.category_id %></p>
+<p>Active: <%= "#{article.active}" %></p>
+<% end %>
